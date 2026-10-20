@@ -1,27 +1,16 @@
 # Housing Price Predictor
 
-A beginner-friendly data analysis project that explores residential property prices and builds a simple regression model to estimate home values based on key housing features.
+https://housing-price-predictor-dashboard.streamlit.app/
 
-## Live App
+A data analysis and regression project for predicting residential house prices based on property characteristics.
 
-Open the app using the provided project link. No installation or downloads are required just to view the dashboard.
+## Overview
 
-## Project Overview
+This project analyzes a residential housing dataset to understand which features are most associated with sale price and to estimate property values using multiple linear regression. The final output is a Streamlit dashboard that presents the core findings and allows users to input property values for price estimation.
 
-This project focuses on understanding the factors that influence residential house prices. Using a dataset of housing records, the analysis explores how characteristics such as area, bedroom count, hot water availability, and air conditioning relate to sale price.
+## Dataset
 
-The project combines:
-- Exploratory Data Analysis (EDA)
-- Data visualization
-- Regression modeling
-- An interactive Streamlit dashboard
-
-The goal is to present the findings clearly and accessibly for a portfolio project aimed at entry-level data analysis roles.
-
-## Dataset Description
-
-The dataset used in this project is stored in:
-- `data/housing_data.csv`
+The project uses the dataset in `data/housing_data.csv`.
 
 It contains 545 housing records and 5 variables:
 - `price` — selling price of the property
@@ -34,7 +23,6 @@ The dataset is complete and contains no missing values in the analyzed columns.
 
 ## Tools and Technologies
 
-The project uses the following tools and libraries:
 - Python
 - Pandas
 - NumPy
@@ -46,57 +34,32 @@ The project uses the following tools and libraries:
 
 ## Methodology
 
-The project follows a straightforward data science workflow:
-
 1. Load and inspect the dataset
-2. Check for missing values and basic data quality issues
-3. Summarize the dataset with descriptive statistics
-4. Explore relationships between variables and sale price
-5. Encode categorical variables for modeling
-6. Build a multiple linear regression model
-7. Evaluate the model’s performance
-8. Present the results through an interactive dashboard
-
-The model uses:
-- Area
-- Bedrooms
-- Hot Water
-- Air Conditioning
-
-as predictors for the target variable:
-- Price
+2. Review basic descriptive statistics and missing values
+3. Explore relationships between predictors and price
+4. Encode categorical variables for modeling
+5. Build a multiple linear regression model
+6. Evaluate the model and visualize results
 
 ## Key Features
 
-- Interactive dashboard with multiple sections:
-  - Project Overview
-  - Dataset Summary
-  - Visualizations
-  - Regression Results
-  - Price Predictor
-- Distribution of home prices
-- Area vs. price scatter plot with trendline
-- Boxplots comparing price by:
-  - number of bedrooms
-  - hot water availability
-  - air conditioning availability
+- Interactive dashboard with sections for overview, dataset summary, visualizations, regression results, and price prediction
+- Price distribution analysis
+- Scatter and box plots for area, bedrooms, hot water, and air conditioning
 - Correlation analysis
-- Regression model summary
-- House price prediction form
+- Price prediction form for custom inputs
 
 ## Results and Insights
 
-The project code and dashboard support the following findings:
-
-- The dataset includes properties ranging from approximately ₹1.75M to ₹13.3M
-- The average sale price is approximately ₹4.77M
+- Average property price is approximately ₹4.77M
 - House area shows the strongest positive relationship with price
-- Air conditioning appears to be associated with higher prices
-- Bedrooms alone are not as strong a predictor as area
+- Air conditioning is associated with higher prices; bedroom count is a weaker predictor than area
 - The regression model explains about 48.1% of the variation in price
-- The model’s RMSE is approximately ₹1.35M
+- RMSE is approximately ₹1.35M. This measures the square root of the average squared prediction error, so larger errors affect the value more than smaller ones
 
-These findings are presented in the dashboard and are based on the actual code in the repository.
+## Model Limitation
+
+The model is limited to the variables available in the dataset. It does not include factors such as location, neighborhood characteristics, property age, furnishing, or parking, which often influence real estate values. As a result, predictions may be less accurate for homes that fall outside the patterns represented in the training data.
 
 ## Repository Structure
 
@@ -114,28 +77,26 @@ housing-price-predictor/
 ├── charts.py
 ├── requirements.txt
 ├── .gitignore
-└── README.md
+├── README.md
+└── app.py
 ```
 
-## How to View the Project
+## Run Locally
 
-To view the app, open the provided live app link in your browser.
+Install the dependencies:
 
-If you want to run it locally instead, use:
+```bash
+pip install -r requirements.txt
+```
+
+Then start the app:
 
 ```bash
 streamlit run app.py
 ```
 
-After installing the required dependencies, the app can be opened in the browser from the local Streamlit URL.
+Open the local URL shown in the terminal in your browser.
 
 ## Summary
 
-This project demonstrates foundational data analysis and predictive modeling skills in a practical, portfolio-ready format. It shows the ability to:
-- work with a real dataset
-- explore relationships in the data
-- build a regression model
-- visualize findings clearly
-- present results in an interactive dashboard
-
-It is a suitable project for an entry-level data analyst portfolio because it combines technical analysis with clear communication and business-relevant insights.
+This project demonstrates practical experience in data cleaning, exploratory analysis, visualization, and regression modeling. It is suitable for a portfolio focused on data analysis and predictive analytics.
