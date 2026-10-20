@@ -1,6 +1,6 @@
 # Housing Price Predictor
 
-https://housing-price-predictor-dashboard.streamlit.app/
+[🚀 Launch Interactive Dashboard](https://housing-price-predictor-dashboard.streamlit.app/)
 
 A data analysis and regression project for predicting residential house prices based on property characteristics.
 
@@ -65,8 +65,7 @@ The dataset is complete and contains no missing values in the analyzed columns.
 - Average property price is approximately ₹4.77M
 - House area shows the strongest positive relationship with price
 - Air conditioning is associated with higher prices; bedroom count is a weaker predictor than area
-- The regression model explains about 48.1% of the variation in price
-- RMSE is approximately ₹1.35M. This measures the square root of the average squared prediction error, so larger errors affect the value more than smaller ones
+- The regression model achieved an in-sample R² of 0.481 and RMSE of approximately ₹1.35 million. These results describe its fit to the analyzed dataset rather than its performance on unseen properties.
 
 ## Model Limitation
 
@@ -81,6 +80,9 @@ housing-price-predictor/
 ├── data/
 │   └── housing_data.csv
 ├── images/
+│   ├── landing_page.png
+│   ├── visualization_page.png
+│   ├── prediction_page.png
 │   └── house_clip.png
 ├── notebooks/
 │   └── data_explore.ipynb
@@ -89,7 +91,6 @@ housing-price-predictor/
 ├── requirements.txt
 ├── .gitignore
 ├── README.md
-└── app.py
 ```
 
 ## Run Locally
