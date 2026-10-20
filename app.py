@@ -469,8 +469,8 @@ elif page == "Price Predictor":
         submitted = st.form_submit_button("Predict Price")
 
         if submitted:
-            hot_water = 1 if hot_water == "Yes" else 0
-            air_conditioning = 1 if air_conditioning == "Yes" else 0
+            hot_water = 1 if hot_water == "yes" else 0
+            air_conditioning = 1 if air_conditioning == "yes" else 0
 
             # Predict price using the trained model
             predicted_price = (
