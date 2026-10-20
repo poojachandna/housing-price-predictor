@@ -8,6 +8,17 @@ A data analysis and regression project for predicting residential house prices b
 
 This project analyzes a residential housing dataset to understand which features are most associated with sale price and to estimate property values using multiple linear regression. The final output is a Streamlit dashboard that presents the core findings and allows users to input property values for price estimation.
 
+## Dashboard Preview
+
+### Project Overview
+![Dashboard Overview](images/landing_page.png)
+
+### Interactive Data Visualizations
+![Price Visualization](images/visualization_page.png)
+
+### House Price Predictor
+![Price Predictor](images/prediction_page.png)
+
 ## Dataset
 
 The project uses the dataset in `data/housing_data.csv`.
